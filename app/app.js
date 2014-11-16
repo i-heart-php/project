@@ -62,11 +62,7 @@ angular.module('uiRouterSample', [
           // For top level states, like this one, the parent template is
           // the index.html file. So this template will be inserted into the
           // ui-view within index.html.
-          template: '<p class="lead">Welcome to the UI-Router Demo</p>' +
-            '<p>Use the menu above to navigate. ' +
-            'Pay attention to the <code>$state</code> and <code>$stateParams</code> values below.</p>' +
-            '<p>Click these links—<a href="#/c?id=1">Alice</a> or ' +
-            '<a href="#/user/42">Bob</a>—to see a url redirect in action.</p>'
+          template: '<h3>Welcome<h3>'
 
         })
 
@@ -81,13 +77,7 @@ angular.module('uiRouterSample', [
           templateProvider: ['$timeout',
             function (        $timeout) {
               return $timeout(function () {
-                return '<p class="lead">UI-Router Resources</p><ul>' +
-                         '<li><a href="https://github.com/angular-ui/ui-router/tree/master/sample">Source for this Sample</a></li>' +
-                         '<li><a href="https://github.com/angular-ui/ui-router">Github Main Page</a></li>' +
-                         '<li><a href="https://github.com/angular-ui/ui-router#quick-start">Quick Start</a></li>' +
-                         '<li><a href="https://github.com/angular-ui/ui-router/wiki">In-Depth Guide</a></li>' +
-                         '<li><a href="https://github.com/angular-ui/ui-router/wiki/Quick-Reference">API Reference</a></li>' +
-                       '</ul>';
+                return 'test';
               }, 100);
             }]
         })
